@@ -1,0 +1,13 @@
+%body
+  %header.header.clearfix
+    %nav
+      %ul.nav.nav-pills.float-right
+        %li.nav-item
+          = link_to root_path, class: 'nav-link' do
+            Home
+        %li.nav-item
+          = link_to about_path, class: 'nav-link' do
+            About
+        %li.nav-item
+          %a.nav-link{:href => "#"} Contact
+    %h3.text-muted Project name

@@ -7,5 +7,11 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = yield
-    = javascript_pack_tag 'hello_vue'
+    .container
+      = render 'layouts/body_head'
+
+      = render 'layouts/body_main'
+
+      = render 'layouts/body_footer'
+
+    = render 'layouts/body_scripts'
