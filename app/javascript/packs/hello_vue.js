@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(document.createElement('hello'))
   const app = new Vue({
     render: h => h(App)
-  }).$mount('hello')
+  }).$mount('hello');
 
-  console.log(app)
-})
+  console.log(app);
+});
 
 
 // The above code uses Vue without the compiler, which means you cannot
